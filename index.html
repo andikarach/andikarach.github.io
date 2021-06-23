@@ -1,220 +1,181 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="style/default.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+</head>
+<body>
+	<div hidden>
+		<input type="text" id="link-default" value="style/default.css">
+		<input type="text" id="link-blue" value="style/blue.css">
+		<input type="text" id="link-green" value="style/green.css">
+		<input type="text" id="link-purple" value="style/purple.css">
+	</div>
+	<section class="s1">
+		<div class="main-container">
+			<div class="greeting-wrapper">
+				<h1>Hi, I'm  Andika Rachadi</h1>
+			</div>
+			<div class="intro-wrapper">
+				<div class="nav-wrapper">
+					<div class="dots-wrapper">
+						<div id="dot-1" class="browser-dots"></div>
+						<div id="dot-2" class="browser-dots"></div>
+						<div id="dot-3" class="browser-dots"></div>
+					</div>
+					<ul id="navigation">
+						<li><a href="">Contact</a></li>
+ 
+					</ul>
+				</div>
+				<div class="left-column">
+					<img id="profile_pic" src="img/me.jpg">
+					<h5 style="text-align: center;line-height: 0;">Personalize Theme</h5>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+					<div id="theme-options-wrapper">
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+					</div>
 
-    <!-- My CSS -->
-    <link rel="stylesheet" href="css/style.css">
+					<p id="settings-note">*Theme settings will be saved for<br>your next visit</p>
+				</div>
+				<div class="right-column">
+					<div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>What I Do</h3>
+							<p>I was a lead developer in a past life, now I enjoy teaching courses.</p>
+							<div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="s2">
+		<div class="main-container">
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>More about me</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+					<p>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<hr>
+					<h4>TOP EXPERTISE</h4>
+					<p> Lorem ipsum dolor sit amet, consectetur <a href="file/CV_Andika Rachadi.pdf" target="_blank">Download CV</a></p>
+					<div class="skills">
+						<ul>
+							<li>HTML/CSS</li>
+							<li>PHP</li>
+							<li>Code Igniter</li>
+							<li>NodeJS</li>
+						</ul>
+						<ul>
+							<li>Javascript</li>
+							<li>MySQL</li>
+							<li>Laravel</li>
+							<li>MongoDB</li>
+						</ul>
+					</div>
+				</div>
+				<div class="social-links">
+					<img id="social_img" src="img/follow.jpg">
+					<h3>Find me</h3>
+					<a href="">Youtube: </a><br>
+					<a href="">Instagram: </a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="s1">
+		<div class="main-container">
+			<h3 style="text-align: center;">Some of my past projects</h3>
+			<div class="post-wrapper">
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="img/qamuschool.png">
+						<div class="post-preview">
+							<h6 class="post-title">Qamuschool</h6>
+							<p class="post-intro">
+								This is sentence. some more text here.
+							</p>
+							<a href="">Read more</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="img/pkbmlentera.png">
+						<div class="post-preview">
+							<h6 class="post-title">PKBM Lentera</h6>
+							<p class="post-intro">
+								This is sentence. some more text here.
+							</p>
+							<a href="">Read more</a>
+						</div>
+					</div>
+				</div>
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="img/dash.jpg">
+						<div class="post-preview">
+							<h6 class="post-title">Post Title</h6>
+							<p class="post-intro">
+								This is sentence. some more text here.
+							</p>
+							<a href="">Read more</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="s2">
+		<div class="main-container">
+			<h3 style="text-align: center;">Get in touch</h3>
 
-    <title>My Portfolio</title>
-  </head>
-  <body>
+			<form id="contact-form">
+				<label>Name</label>
+				<input class="input-field" type="text" required id="name"></input>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#home">Andika</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+				<label>Subject</label>
+				<input class="input-field" type="text" required id="subject"></input>
 
+				<label>Email</label>
+				<input class="input-field" type="text" required id="email"></input>
 
-    <div class="jumbotron" id="home">
-      <div class="container">
-        <div class="text-center">
-          <img src="img/profile1.png" class="rounded-circle img-thumbnail">
-          <h1 class="display-4">Andika Rachadi Pratama</h1>
-          <h3 class="lead">Programmer | Reader </h3>
-        </div>
-      </div>
-    </div>
+				<label>Message</label>
+				<textarea class="input-field" id="message"></textarea>
 
-
-    <!-- About -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col text-center">
-            <h2>About</h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
-          </div>
-          <div class="col-md-5">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, molestiae sunt doloribus error ullam expedita cumque blanditiis quas vero, qui, consectetur modi possimus. Consequuntur optio ad quae possimus, debitis earum.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Portfolio -->
-    <section class="portfolio bg-light" id="portfolio">
-      <div class="container">
-        <div class="row pt-4 mb-4">
-          <div class="col text-center">
-            <h2>Portfolio</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/1.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/2.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/3.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>   
-        </div>
-
-        <div class="row">
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/4.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div> 
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/5.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md mb-4">
-            <div class="card">
-              <img class="card-img-top" src="img/thumbs/6.png" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="row pt-4 mb-4">
-          <div class="col text-center">
-            <h2>Contact</h2>
-          </div>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-4">
-            <div class="card bg-primary text-white mb-4 text-center">
-              <div class="card-body">
-                <h5 class="card-title">Contact Me</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-            
-            <ul class="list-group mb-4">
-              <li class="list-group-item"><h3>Location</h3></li>
-              <li class="list-group-item">My Office</li>
-              <li class="list-group-item">Jl. Mujair 3 No 141, Depok</li>
-              <li class="list-group-item">West Java, Indonesia</li>
-            </ul>
-          </div>
-
-          <div class="col-lg-6">
-            
-            <form>
-              <div class="form-group">
-                <label for="nama">Nama</label>
-                <input type="text" class="form-control" id="nama">
-              </div>
-              <div class="form-group">
-                <label for="email">Email</label>
-                <input type="text" class="form-control" id="email">
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="text" class="form-control" id="phone">
-              </div>
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea class="form-control" id="message" rows="3"></textarea>
-              </div>
-              <div class="form-group">
-                <button type="button" class="btn btn-primary">Send Message</button>
-              </div>
-            </form>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!-- footer -->
-    <footer class="bg-dark text-white mt-5">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-            <p>Copyright &copy; 2020.</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-
-
-
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-  </body>
+				<button id="submit-btn" type="submit" id="submit">Submit</button>
+				<button id="submit-btn" type="button" class="sendMail">DANGER</button>
+			</form>
+		</div>
+	</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+<script type="text/javascript">
+	$('.sendMail').click(function() {
+		const name 		= document.getElementById('name').value
+		const subject 	= document.getElementById('subject').value
+		const email 	= document.getElementById('email').value
+		const message 	= document.getElementById('message').value
+  		$.ajax({
+    		type: "POST",
+		  	url: "https://frozen-earth-74822.herokuapp.com/",
+		  	data: {
+		    	email: email,
+		    	name: name,
+		    	message: message,
+		    	subject: subject
+			},
+			success: () => { alert('Done') },
+			error: () => { alert('Failed') }
+  		});
+	});
+</script>
+</body>
 </html>
