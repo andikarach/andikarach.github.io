@@ -170,29 +170,29 @@ $(function() {
 	$('#contact-form').submit(function(e) {
 	    e.preventDefault();
 	    spinner.show();
-	    
-	    $.ajax({
-	    	type: "POST",
-		  	url: "https://frozen-earth-74822.herokuapp.com/",
-		  	data: {
-			   	email: email,
-			   	name: name,
-			   	message: message,
-			   	subject: subject
-			},
-			success:  () => {
-				alert('Success')
-			},
-			error: () => {
-				alert('Error')
-			}
-	    }).done(function(resp) {
-			const uri = window.location.href
-			setTimeout(function(){
-		    	spinner.hide();
-				window.location = uri;
-			}, 1000);
-    	})
+		alert('Pending')	    
+	  //   $.ajax({
+	  //   	type: "POST",
+		 //  	url: "https://frozen-earth-74822.herokuapp.com/",
+		 //  	data: {
+			//    	email: email,
+			//    	name: name,
+			//    	message: message,
+			//    	subject: subject
+			// },
+			// success:  () => {
+			// 	alert('Success')
+			// },
+			// error: () => {
+			// 	alert('Error')
+			// }
+	  //   }).done(function(resp) {
+			// const uri = window.location.href
+			// setTimeout(function(){
+		 //    	spinner.hide();
+			// 	window.location = uri;
+			// }, 1000);
+   //  	})
 	});
 });
 </script>
