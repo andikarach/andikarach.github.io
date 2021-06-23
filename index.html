@@ -155,30 +155,46 @@
 			</form>
 		</div>
 	</section>
+
+	<div id="loader" hidden></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script type="text/javascript" src="script/script.js"></script>
-<script type="text/javascript">
-	$('.sendMail').click(function() {
-		const name 		= document.getElementById('name').value
-		const subject 	= document.getElementById('subject').value
-		const email 	= document.getElementById('email').value
-		const message 	= document.getElementById('message').value
-  		$.ajax({
-    		type: "POST",
+<script>
+var spinner = $('#loader');
+$(function() {
+	const name 		= $("#name").val();
+	const subject 	= $("#subject").val();
+	const email 	= $("#email").val();
+	const message 	= $("#message").val();
+
+	$('#contact-form').submit(function(e) {
+	    e.preventDefault();
+	    spinner.show();
+	    
+	    $.ajax({
+	    	type: "POST",
 		  	url: "https://frozen-earth-74822.herokuapp.com/",
 		  	data: {
-		    	email: email,
-		    	name: name,
-		    	message: message,
-		    	subject: subject
+			   	email: email,
+			   	name: name,
+			   	message: message,
+			   	subject: subject
 			},
-			success: () => { 
-				// window.location = "https://andikarach.github.io/";
-				alert('Message sent') 
+			success:  () => {
+				alert('Success')
 			},
-			error: () => { alert('Failed') }
-  		});
+			error: () => {
+				alert('Error')
+			}
+	    }).done(function(resp) {
+			const uri = window.location.href
+			setTimeout(function(){
+		    	spinner.hide();
+				window.location = uri;
+			}, 1000);
+    	})
 	});
+});
 </script>
 </body>
 </html>
